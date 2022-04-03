@@ -1,15 +1,18 @@
-class Main {
+package leetcode.array.inplace;
 
+public class inplaceTwo {
     public static void main(String[] args) {
-        removeDuplicates(new int[]{0, 1, 0, 3, 12});
+        Solution solution = new Solution();
     }
+}
 
-    public static int removeDuplicates(int[] nums) {
+class Solution {
+    public void moveZeroes(int[] nums) {
         int writePoint = 0;
         int zeroPoint = 0;
         for(int readPoint = 0; readPoint < nums.length; readPoint++) {
             if(nums[readPoint] != 0) {
-                nums[writePoint] = readPoint;
+                nums[writePoint] = nums[readPoint];
                 writePoint++;
             } else {
                 zeroPoint++;
@@ -21,7 +24,5 @@ class Main {
             nums[i] = 0;
             zeroPoint--;
         }
-
-        return zeroPoint;
     }
 }

@@ -1,6 +1,4 @@
-package leetcode.inplace;
-
-import java.util.Arrays;
+package leetcode.array.inplace;
 
 public class inplaceOne {
     public static void main(String[] args) {
