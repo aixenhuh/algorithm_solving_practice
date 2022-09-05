@@ -2,13 +2,13 @@ package programmers.level2;
 
 import java.util.Arrays;
 
-public class lessons_12952 {
+public class Lessons_12952 {
     static int count = 0;
     static int th;
     static int board[] = new int[15];
 
     public static void main(String[] args) {
-        solution(4);
+        nqueen(4);
     }
 
     public static int solution(int n) {

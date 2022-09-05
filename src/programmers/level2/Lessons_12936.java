@@ -2,7 +2,7 @@ package programmers.level2;
 
 import java.util.ArrayList;
 
-public class lessons_12936 {
+public class Lessons_12936 {
     public static int[] solution(int n, long k) {
         ArrayList<Integer> nums = new ArrayList();
         ArrayList<Long> answer = new ArrayList();

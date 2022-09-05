@@ -1,6 +1,6 @@
 package programmers.level2;
 
-public class lessons_12945 {
+public class Lessons_12945 {
     public static void main(String[] args) {
         solution(5); // 2;
     }

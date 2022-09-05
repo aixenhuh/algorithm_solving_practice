@@ -1,6 +1,6 @@
 package programmers.level2;
 
-public class lessons_12953 {
+public class Lessons_12953 {
 
     public static void main(String[] args) {
         solution(new int[] {2, 6, 8, 14});
