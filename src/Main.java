@@ -1,13 +1,22 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 class Main {
 
     public static void main(String[] args) {
-        solution("()))((()");
+        solution(8, 4, 7);
     }
 
-    public static String solution(String p) {
-        String str = recursive(p);
-        System.out.println(str);
-        return str;
+    public static int solution(int n, int a, int b)
+    {
+        int round = 0;
+        while(a != b)
+        {
+            a = a/2 + a%2;
+            b = b/2 + b%2;
+            round++;
+        }
+        return round;
     }
 
     public static String recursive(String str) {
