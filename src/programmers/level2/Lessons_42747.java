@@ -10,8 +10,18 @@ public class Lessons_42747 {
 
     public static int solution(int[] citations) {
         Arrays.sort(citations);
+        int answer = 0;
 
-        return citations[citations.length / 2];
+        for(int i = 0; i < citations.length; i++) {
+            int h = citations.length - i;
+
+            if(citations[i] >= h) {
+                answer = h;
+                break;
+            }
+        }
+
+        return answer;
     }
 
 }
